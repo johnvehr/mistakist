@@ -1,0 +1,37 @@
+    <div class="contact-form">
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="form-horizontal">
+    <div class="control-group">
+      <%= form.label "Your Name", class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :name %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label "Your Email", class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :email %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= form.label "Message Subject", class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :subject %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label "Fill Us In", class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_area :body, cols: 40, rows:5 %>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset class="control-group">
+    <%= form.submit "Send it", class: 'reach-us-button' %>
+  </fieldset>
+<% end %>
+</div>

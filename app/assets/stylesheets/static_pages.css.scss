@@ -1,0 +1,147 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+body {
+  background:black;
+}
+
+/* header */
+
+header {
+  padding-top:75px;
+  width:100%;
+}
+
+.logo {
+  margin:0 auto;
+  width:250px;
+}
+
+.mis-container {
+  margin:0 auto;
+  width:900px;
+  text-align:center;
+  padding-top:50px;
+}
+
+.mis-container span {
+  margin-left:5px;
+  margin-right:5px;
+  color:#fff;
+}
+
+.vid-container {
+  padding-top:40px;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.contact-button {
+  color:rgba(255,255,255,0.7);
+  text-transform:uppercase;
+  -webkit-transition:all 0.2s linear;
+  &:hover {
+  text-decoration:none;
+  color:rgba(255,255,0,0.69);
+  }
+}
+
+/* contact form */
+
+.contact-overlay {
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+}
+
+.contact-form {
+  padding-top:40px;
+  width:542px;
+  margin:0 auto;
+}
+
+.control-label {
+  color:rgba(255,255,0,0.69);
+  font-family:sans-serif;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+ .reach-us-button {
+    margin-left:325px;
+    background:none;
+    border:none;
+    color:rgba(255,255,255,0.7);
+    text-transform:uppercase;
+    font-family:sans-serif;
+    -webkit-transition:all 0.2s linear;
+    &:hover {
+    color:rgba(255,255,0,0.69);
+    }
+ }
+
+
+ /* about us */
+
+ .about-us {
+  margin:0 auto;
+  width:969px;
+  text-align:center;
+ }
+
+ .brandon {
+  float:left;
+  width:323px;
+  padding-top:100px;
+  color:rgba(255,255,0,0.69);
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:bold;
+  font-family:sans-serif;
+  letter-spacing:1px;
+  margin-bottom:140px; 
+}
+
+.brandon h3 {
+  line-height:75px;
+}
+
+.brandon h4 {
+  line-height:17px;
+}
+
+.about-buttons {
+  width:160px;
+  padding-top:20px;
+  text-align:center;
+  margin:0 auto;
+}
+
+.about-buttons span {
+  margin-left:5px;
+  margin-right:5px;
+  color:#fff;
+}
+
+
+.carousel {
+  box-shadow: 0px 0px 40px 5px rgba(255,255,0,0.69);
+}
+.carousel-control {
+  top:45%;
+  font-size:20em;
+  background:none;
+  border:0;
+}
+
+.left {
+  position:absolute;
+  left:-110px;
+}
+.carousel-control.right {
+  position:absolute;
+  right:-68px;
+}

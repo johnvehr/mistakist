@@ -1,0 +1,31 @@
+<div class="mis-container">
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item">
+        <iframe src="http://player.vimeo.com/video/55418760?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+      <div class="item">
+        <iframe src="http://player.vimeo.com/video/51874402?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+      <div class="item">
+        <iframe src="http://player.vimeo.com/video/51190280?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+  </div>
+  <div class="about-buttons">
+  <%= link_to "Contact", contact_path, class: 'contact-button'%> <span>|</span>
+  <%= link_to "About", about_path, class: 'contact-button' %>
+  </div>
+</div>
+
+
+
+      <script type="text/javascript" charset="utf-8">
+        $(window).load(function(){
+              $('.carousel').carousel('cycle');
+            })
+</script>
+
