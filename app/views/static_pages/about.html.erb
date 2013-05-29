@@ -1,23 +1,15 @@
 <div class="about-us">
-  <div class="brandon">
-    <h3>Brandon Langley</h3>
-    <h4>Writer</h4>
-    <h4>Director</h4>
-    <h4>Producer</h4>
-  </div>
-  <div class="brandon">
-    <h3>Andrew T. McGary</h3>
-    <h4>Cinematographer</h4>
-    <h4>editor</h4>
-  </div>
-  <div class="brandon">
-    <h3>Nikolai Teague</h3>
-    <h4>Audio Engineer</h4>
-    <h4>Sound Design</h4>
-  </div>
-  <div class="about-buttons">
-    <%= link_to "Watch", root_path, class: 'contact-button' %> <span>|</span>
-    <%= link_to "Contact", contact_path, class: 'contact-button' %>
+  <%= link_to image_tag('/assets/mis.jpg'), root_path %>
+  <h3>Brandon Langley</h3>
+  <h4>writer / director / producer</h4>
+  <br>
+  <h3>Andrew T Mcgary</h3>
+  <h4>cinematographer / editor</h4>
+  <br>
+  <h3>Nikolai Teague</h3>
+  <h4>sound / audio design</h4>
+  <div class="about-links">
+    <%= link_to 'Watch', root_path %>
+    <%= link_to 'Contact', contact_path %>
   </div>
 </div>
-

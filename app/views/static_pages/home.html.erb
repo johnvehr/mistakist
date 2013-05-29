@@ -1,31 +1,44 @@
-<div class="mis-container">
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="item">
-        <iframe src="http://player.vimeo.com/video/55418760?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </div>
-      <div class="item">
-        <iframe src="http://player.vimeo.com/video/51874402?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </div>
-      <div class="item">
-        <iframe src="http://player.vimeo.com/video/51190280?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </div>
-    </div>
-      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
+<div id="r-slider-wrapper">
+  <div class="logo">
+    <%= link_to image_tag('/assets/mis.jpg'), root_path %>
+    <ul class="logo-nav">
+      <li><%= link_to 'about', about_path %></li>
+      <li><%= link_to 'contact', contact_path %></li>
+    </ul>
   </div>
-  <div class="about-buttons">
-  <%= link_to "Contact", contact_path, class: 'contact-button'%> <span>|</span>
-  <%= link_to "About", about_path, class: 'contact-button' %>
+  <div id="r-slider-category-wrapper">
+    <ul>
+      <li><a href="#first-cat"><img src="/assets/EYES_thumb-2.png" alt=""></a></li>
+      <li><a href="#second-cat"><img src="/assets/HOLY_thumb.png" alt=""></a></li>
+      <li><a href="#third-cat"><img src="/assets/STARS_thumb.png" alt=""></a></li>
+    </ul>
+  </div>
+  <div id="r-slider-contents-wrapper">
+    <div id="r-slider-content-left">
+      <div id="first-cat">
+        <div class="r-img-wrap">
+          <iframe src="http://player.vimeo.com/video/51874402?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+      <div id="second-cat">
+        <div class="r-img-wrap">
+         <iframe src="http://player.vimeo.com/video/55418760?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+        </div>
+      </div>
+      <div id="third-cat">
+        <div class="r-img-wrap">
+         <iframe src="http://player.vimeo.com/video/48054611?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-
-
-      <script type="text/javascript" charset="utf-8">
-        $(window).load(function(){
-              $('.carousel').carousel('cycle');
-            })
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#r-slider-wrapper').rslider();
+      });
 </script>
 
+<!-- 
+<iframe src="http://player.vimeo.com/video/51874402?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+-->
